@@ -1,0 +1,12 @@
+{
+  "schema": "pawswing.kit-catalog.v1",
+  "kits": [
+    {
+      "id": "kit000",
+      "title": "IndiumEngine RK3568 工位（kit000）",
+      "ssh_target": "user@kit000.ts.pawswing.app",
+      "adapter": "/home/user/bench/kit-adapter",
+      "identity_file": "<SEAT_HOME>/.ssh/kit_kit000_ed25519"
+    }
+  ]
+}

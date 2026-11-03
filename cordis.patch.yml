@@ -1,0 +1,14 @@
+- insert:
+    - id: pawswing-kit
+      name: pawswing-dsh-kit
+      config:
+        kitBin: kit
+        catalog: ~/.config/kit/catalog.json
+        defaultKit: kit000
+        person: ""
+        session: ""
+        timeoutMs: 120000
+        guardSshBypass: true
+        stationHosts:
+          - 100.96.0.5
+          - kit000.ts.pawswing.app

@@ -1,0 +1,41 @@
+{
+  "name": "pawswing-dsh-kit",
+  "version": "0.1.0",
+  "description": "PawSwing Kit tools for dsh: typed instrument-bench operations over the kit CLI, with lease discipline and an SSH-bypass guard.",
+  "type": "module",
+  "private": true,
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawswing-limited/pawswing-dsh-kit.git"
+  },
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "locale/*.json",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.0 <0.3.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "workspace:~",
+    "@deepseek-ai/dsh-tools": "workspace:*",
+    "@deepseek-ai/schemastery": "workspace:*"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "PawSwing Kit",
+    "description": "Operate PawSwing instrument stations through the kit CLI: discover kits, inspect leases, run finished measurements, and fetch artifacts with lease discipline enforced."
+  }
+}
